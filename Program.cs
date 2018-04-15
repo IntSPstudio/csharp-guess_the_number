@@ -1,6 +1,6 @@
 //|==============================================================|//
 // Made by IntSPstudio
-// Quess The Number
+// Guess The Number
 // Thank you for using this game!
 // Version: 0.0.1.20180415
 // ID: 650004001
@@ -43,7 +43,7 @@ namespace QuessTheNumber
             public static string messageCoHiNumber = "Number need to be bigger";
             public static string messageCoLoNumber = "Number need to be smaller";
             public static string messageInvalidInput = "Please use only a numbers";
-            public static string messageQuessNumberBetween = "Quess a number";
+            public static string messageQuessNumberBetween = "Guess a number";
             public static string messagePlayAgain = "Do you want to play again? Yes/No";
             //USER DATA
             public static int userAfNumQuess = 0;
@@ -60,8 +60,8 @@ namespace QuessTheNumber
             Globals.correctNumber = random.Next(Globals.correctNumberLN, Globals.correctNumberHN);
             Globals.correctNumberRange = Globals.correctNumberHN - Globals.correctNumberLN;
             //TEXT UPDATE
-            Globals.messageQuessNumberBetween = "Quess a number between " + Globals.correctNumberLN.ToString() + " and " + Globals.correctNumberHN.ToString();
-            Console.Title = "Quess The Number";
+            Globals.messageQuessNumberBetween = "Guess a number between " + Globals.correctNumberLN.ToString() + " and " + Globals.correctNumberHN.ToString();
+            Console.Title = "Guess The Number";
             //RESET
             Globals.userAfNumQuess = 1;
         }
